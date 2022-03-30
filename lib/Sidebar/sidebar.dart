@@ -62,12 +62,30 @@ class _SideBarState extends State<SideBar>
             duration: _animationDuration,
             top: 0,
             bottom: 0,
-            left: isSideBarOpenedAsync.data == true  ? 0 : 0,
+            left: isSideBarOpenedAsync.data == true  ? 0 : -screenWidth,
             right: isSideBarOpenedAsync.data == true  ? 0 : screenWidth - 45,
             child: Row(children: <Widget>[
               Expanded(
                 child: Container(
                   color: Colors.red,
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(
+                        height: 100,
+                      ),
+                      ListTile(
+                        title: Text("Sameep", style: TextStyle(color:Colors.white,fontWeight: FontWeight.w800, fontSize: 30)),
+                        subtitle: Text("sameep@gmail.com", style: TextStyle(color: Colors.lightGreen, fontSize: 20)),
+                        leading: CircleAvatar(
+                          child: Icon(
+                            Icons.perm_identity,
+                            color: Colors.white,
+                          ),
+                          radius: 40,
+                        )
+                      ),
+                    ]
+                  )
                 ),
               ),
               Align(
