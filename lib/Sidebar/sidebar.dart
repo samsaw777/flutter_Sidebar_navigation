@@ -3,6 +3,8 @@ import 'dart:async';
 import "package:flutter/material.dart";
 import "package:rxdart/rxdart.dart";
 
+import 'menu_list.dart';
+
 class SideBar extends StatefulWidget {
   @override
   _SideBarState createState() => _SideBarState();
@@ -84,6 +86,26 @@ class _SideBarState extends State<SideBar>
                           radius: 40,
                         )
                       ),
+                      Divider(
+                        height: 64,
+                        thickness: 0.5,
+                        color: Colors.white.withOpacity(0.3),
+                        indent: 32,
+                        endIndent: 32,
+                      
+                      ),
+                      MenuItems(
+                        icon: Icons.home,
+                         title: "Home",
+                         ),
+                      MenuItems(
+                        icon: Icons.home,
+                         title: "Home",
+                         ),
+                      MenuItems(
+                        icon: Icons.home,
+                         title: "Home",
+                         ),
                     ]
                   )
                 ),
