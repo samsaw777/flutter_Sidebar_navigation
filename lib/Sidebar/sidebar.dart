@@ -99,12 +99,28 @@ class _SideBarState extends State<SideBar>
                          title: "Home",
                          ),
                       MenuItems(
-                        icon: Icons.home,
-                         title: "Home",
+                        icon: Icons.arrow_circle_down,
+                         title: "Downloads",
                          ),
                       MenuItems(
-                        icon: Icons.home,
-                         title: "Home",
+                        icon: Icons.watch_later ,
+                         title: "Watch Later",
+                         ),
+                      Divider(
+                        height: 64,
+                        thickness: 0.5,
+                        color: Colors.white.withOpacity(0.3),
+                        indent: 32,
+                        endIndent: 32,
+                      
+                      ),
+                      MenuItems(
+                        icon: Icons.settings ,
+                         title: "Settings",
+                         ),
+                      MenuItems(
+                        icon: Icons.exit_to_app,
+                         title: "Logout",
                          ),
                     ]
                   )
